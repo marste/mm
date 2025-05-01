@@ -18,4 +18,4 @@ RUN pip install --no-cache-dir -r mm/requirements.txt
 EXPOSE 8888
 
 # Run run.py when the container launches
-CMD ["uvicorn", "run:src.main_app", "--host", "0.0.0.0", "--port", "8888", "--workers", "4"]
+CMD ["uvicorn", "run:main_app", "--host", "0.0.0.0", "--port", "8888", "--workers", "4"]
